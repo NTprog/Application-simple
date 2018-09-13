@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quete simple UI</string>
+    <string name="top_flag">Welcome to the wild code school</string>
+    <string name="input_name">Firstname</string>
+    <string name="input_surname">Surname</string>
+    <string name="checker">Yes, i want to be a wilder</string>
+    <string name="send">send</string>
+</resources>
