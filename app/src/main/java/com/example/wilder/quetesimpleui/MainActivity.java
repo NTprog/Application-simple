@@ -34,8 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
                         String afficher = mEdit.getText().toString();
                         String afficher2 = mEdit2.getText().toString();
+                        if(afficher.isEmpty() || afficher2.isEmpty()){
+                            Toast.makeText(MainActivity.this, "Veuillez remplire tous les champs", Toast.LENGTH_SHORT).show();
+                        }else{
 
-                        Toast.makeText(MainActivity.this, "Bienvenu"+ afficher + " " + afficher2, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Bienvenu" + " " + afficher + " " + afficher2, Toast.LENGTH_SHORT).show();
+                        }
 
                     }
                 });
@@ -48,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
                     mEdit.setEnabled(true);
                     mEdit2.setEnabled(true);
+                    mButton.setEnabled(true);
                 }else{
                     mEdit.setEnabled(false);
                     mEdit2.setEnabled(false);
+                    mButton.setEnabled(false);
                 }
             }
         });
